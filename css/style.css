@@ -227,6 +227,9 @@ a {
     right: 0;
     background-color: #958C6B; }
 
+html {
+  -webkit-tap-highlight-color: transparent; }
+
 .news__btn {
   border: none;
   background-color: rgba(0, 0, 0, 0);
@@ -743,9 +746,11 @@ input.invalid {
   justify-content: space-between; }
 
 #amount {
+  margin-top: 15px;
   width: 50%; }
 
 #amount1 {
+  margin-top: 10px;
   text-align: right;
   width: 50%; }
 
@@ -890,6 +895,9 @@ input, textarea {
 .form-btn:hover {
   background-color: #a0784b;
   color: #fff; }
+
+.list-tab__2coll--line input {
+  height: 46px; }
 
 * {
   margin: 0;
