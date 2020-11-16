@@ -133,7 +133,9 @@ function nextPrev(n) {
     x[currentTab].classList.add("color-bg");
     btnWrp.css('margin-top', '40px');
     }
-
+    if ((currentTab == 4)&&(window.matchMedia('(max-width: 800px)').matches)){
+      btnWrp.css('margin-top', '30px');
+      }
     if ((currentTab == 4)&&(window.matchMedia('(min-width: 800px)').matches)){
       btnWrp.css('margin-top', '50px');
       }

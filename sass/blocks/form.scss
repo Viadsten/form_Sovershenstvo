@@ -393,7 +393,7 @@ input.invalid {
   margin: 185px auto 0;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space;
+  justify-content: flex-end;
 }
 
 .regForm__h2{
@@ -668,8 +668,12 @@ input.invalid {
   margin: 0 auto;
   justify-content: space-between;
 }
+#amount{
+  width: 50%;
+}
 #amount1{
   text-align: right;
+  width: 50%;
 }
 
 
@@ -761,7 +765,6 @@ input.invalid {
 .list-tab__2coll--line input{
   width: 90%;
   border: none;
-
   display: block;
   margin: 0 auto 7px;
   font-family: inherit;

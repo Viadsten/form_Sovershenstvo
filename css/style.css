@@ -529,7 +529,7 @@ input.invalid {
   margin: 185px auto 0;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space; }
+  justify-content: flex-end; }
 
 .regForm__h2 {
   font-weight: 400;
@@ -742,8 +742,12 @@ input.invalid {
   margin: 0 auto;
   justify-content: space-between; }
 
+#amount {
+  width: 50%; }
+
 #amount1 {
-  text-align: right; }
+  text-align: right;
+  width: 50%; }
 
 .width-bg {
   display: none; }
