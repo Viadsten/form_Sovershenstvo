@@ -674,12 +674,9 @@ input.invalid {
 }
 #slider-range{
   -webkit-tap-highlight-color: transparent;
-  overflow-y: scroll;
 }
 #amount{
   -webkit-tap-highlight-color: transparent;
-
-  overflow-y: scroll;
   margin-top: 15px;
   width: 50%;
 }
@@ -687,7 +684,6 @@ input.invalid {
   -webkit-tap-highlight-color: transparent;
 
   margin-top: 10px;
-  overflow-y: scroll;
 
   text-align: right;
   width: 50%;
