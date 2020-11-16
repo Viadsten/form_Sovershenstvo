@@ -126,22 +126,22 @@ function nextPrev(n) {
   else{
     btnWrp.css('margin-top', '180px');
   }
-  if ((currentTab == 3)){
-    x[currentTab].classList.add("color-bg");
-    btnWrp.css('margin-top', '100px');
+  if ((currentTab == 3)&&(window.matchMedia('(max-width: 550px)').matches)){
+    btnWrp.css('margin-top', '150px');
     }
-  if ((currentTab == 3)&&(window.matchMedia('(min-width: 850px)'))){
+  if ((currentTab == 3)&&(window.matchMedia('(min-width: 850px)').matches)){
     x[currentTab].classList.add("color-bg");
-    btnWrp.css('margin-top', '10px');
+    btnWrp.css('margin-top', '40px');
     }
 
-    if ((currentTab == 4)&&(window.matchMedia('(min-width: 800px)'))){
+    if ((currentTab == 4)&&(window.matchMedia('(min-width: 800px)').matches)){
       btnWrp.css('margin-top', '50px');
       }
-
-    if ((currentTab == x.length - 1)){
+      if ((currentTab == x.length - 1)&&(window.matchMedia('(max-width: 700px)').matches)){
+        btnWrp.css('margin-top', '210px');
+      }
+    if ((currentTab == x.length - 1)&&(window.matchMedia('(min-width: 700px)').matches)){
       btnWrp.css('margin-top', '0px');
-
     }
 
   if ((currentTab == x.length - 1)){
@@ -149,7 +149,6 @@ function nextPrev(n) {
     lastTab[0].classList.add("tab-last");
     x[currentTab].classList.add("tab-last");
     regForm[0].classList.add("tab-last");
-    btnWrp.css('margin-top', '0px');
     btnWrpBg[0].classList.add("tab-last");
     dotsWrp[0].classList.add("tab-last");
   }
