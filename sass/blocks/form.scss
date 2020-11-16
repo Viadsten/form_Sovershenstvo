@@ -672,12 +672,22 @@ input.invalid {
   margin: 0 auto;
   justify-content: space-between;
 }
+#slider-range{
+  -webkit-tap-highlight-color: transparent;
+  overflow-y: scroll;
+}
 #amount{
+  -webkit-tap-highlight-color: transparent;
+
+  overflow-y: scroll;
   margin-top: 15px;
   width: 50%;
 }
 #amount1{
+  -webkit-tap-highlight-color: transparent;
+
   margin-top: 10px;
+  overflow-y: scroll;
 
   text-align: right;
   width: 50%;
