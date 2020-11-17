@@ -1,87 +1,11 @@
-/*$(document).ready(function(){
-  let position = 0;
-  let slidesToShow = 1;
-  const slidesToScroll = 1;
-  const container = $('.slider-container');
-  const track = $('.slider-track');
-  const item = $('.slider-item');
-  const btnPrev = $('.btn-prev');
-  const btnNext = $('.btn-next');
-  const itemsCount = item.length;
-  let itemWidth = (container.width()) / slidesToShow;
-  let movePosition = slidesToScroll * (itemWidth);
 
-
-
-const mediaQuery650 = window.matchMedia('(min-width: 650px)')
-if (mediaQuery650.matches) {
-  slidesToShow = 2;
-  NewsResize();
-}
-
-const mediaQuery950 = window.matchMedia('(min-width: 950px)')
-if (mediaQuery950.matches) {
-  slidesToShow = 3;
-  NewsResize();
-}
-const mediaQuery1200 = window.matchMedia('(min-width: 1200px)')
-if (mediaQuery1200.matches) {
-  slidesToShow = 4;
-  NewsResize();
-}
-
-function NewsResize(){
-  itemWidth = (container.width()) / slidesToShow;
-  movePosition = slidesToScroll * (itemWidth);
-};
-
-  item.each(function(index, item){
-    $(item).css({
-        minWidth: itemWidth,
-    });
-  });
-
-  btnPrev.click(function(){
-    const itemsLeft = Math.abs(position) / itemWidth;
-
-    position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
-    setPosition();
-    checkBtns();
-  });
-  btnNext.click(function(){
-    const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth)  / itemWidth;
-    position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
-    setPosition();
-    checkBtns();
-  });
-
-  const setPosition = () => {
-    track.css({
-      transform: `translateX(${position}px)`
-    });
-  };
-
-  const checkBtns = () => {
-    btnPrev.prop('disabled', position === 0);
-    btnNext.prop(
-      'disabled',
-      position <= -(itemsCount - slidesToShow) * itemWidth
-    )
-  }
-
-});*/
-
-
-
-
-var currentTab = 0; // Текущая вкладка будет первой вкладкой (0)
-showTab(currentTab); // Отображение текущей вкладки
+var currentTab = 0;
+showTab(currentTab);
 
 function showTab(n) {
-  // Эта функция отобразит указанную вкладку формы ...
   var x = document.getElementsByClassName("tab");
   x[n].classList.add("tab-active");
-  // ... и зафиксируйте кнопки Назад/Вперед:
+
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
   } else {
@@ -92,7 +16,7 @@ function showTab(n) {
   } else {
     document.getElementById("nextBtn").innerHTML = "Далее";
   }
-  // ... и запустите функцию, которая отображает правильный индикатор шага:
+
   fixStepIndicator(n)
 }
 var lastTab = $('body');
@@ -101,22 +25,17 @@ var nextBtn = $('#nextBtn');
 var btnWrpBg = $('.form-btn--bg');
 var dotsWrp = $('.dots-wrp');
 function nextPrev(n) {
-  // Эта функция определит, какую вкладку отображать
+
   var x = document.getElementsByClassName("tab");
-  // Выйдите из функции, если какое-либо поле на вкладке текущий является недопустимым:
+
   if (n == 1 && !validateForm()) return false;
-  // Скрыть текущую вкладку:
   x[currentTab].classList.remove("tab-active");
-  // Увеличение или уменьшение текущей вкладки на 1:
   currentTab = currentTab + n;
-  // если вы дошли до конца формы... :
   if (currentTab >= x.length) {
-    //...форма будет отправлена:
     document.getElementById("regForm").submit();
     return false;
   }
   var btnWrp = $('.form-btn__wrp');
-  // В противном случае отобразите правильную вкладку:
   showTab(currentTab);
 
 
@@ -166,34 +85,27 @@ function nextPrev(n) {
 }
 
 function validateForm() {
-  // Эта функция занимается проверкой полей формы
   var x, y, i, valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
   b = x[currentTab].getElementsByClassName("radio");
   ch = x[currentTab].getElementsByClassName("color-check");
-  // Цикл, который проверяет каждое поле ввода на текущей вкладке:
   for (i = 0; i < y.length; i++) {
-    // Если поле пустое...
     if ((y[i].value == "")){
-      // добавьте в поле "invalid" класс:
       y[i].className += " invalid";
-      // и установите текущий допустимый статус в false:
       valid = false;
     }
 
   }
   for (i = 0; i < y.length; i++) {
     if (((y[i].checked) == true)&&(y[i].type == "radio")){
-      // добавьте в поле "invalid" класс:
       break;
     }else if((y[i].type == "radio")&&(i == y.length - 1)&&((y[i].checked) == false)){
       y[i].className += " invalid";
       alert('Выберите один из вариантов.')
-      // и установите текущий допустимый статус в false:
       valid = false;
     }
-// ТУТ ПРОВЕРКА ДЛЯ ЧЕКБОКСОВ. ОНА НЕ РАБОТАЕТ((((((((
+// проверка checkbox
     if (((((y[i].checked) == true)&&(y[i].type == "checkbox"))||(y[i].value != ""))){
       valid = true;
       break;
@@ -206,20 +118,17 @@ function validateForm() {
   }
 
 
-  // Если действительный статус равен true, отметьте шаг как завершенный и действительный:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
-  return valid; // верните действительный статус
+  return valid;
 }
 
 function fixStepIndicator(n) {
-  // Эта функция удаляет "активный" класс всех шагов...
   var i, x = document.getElementsByClassName("step");
   for (i = 0; i < x.length; i++) {
     x[i].className = x[i].className.replace(" active", "");
   }
-  //... и добавляет "активный" класс к текущему шагу:
   x[n].className += " active";
 }
 
