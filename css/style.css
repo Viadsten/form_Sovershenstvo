@@ -868,6 +868,11 @@ input, textarea {
   width: 90%;
   margin: 10px auto; }
 
+@media (min-width: 1000px) {
+  .last-tab__descr {
+    width: 56%;
+    margin-left: 20px; } }
+
 .tab-last {
   background-color: #171e26; }
 

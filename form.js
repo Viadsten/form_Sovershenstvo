@@ -68,6 +68,9 @@ function nextPrev(n) {
     if ((currentTab == x.length - 1)&&(window.matchMedia('(min-width: 700px)').matches)){
       btnWrp.css('margin-top', '0px');
     }
+    if ((currentTab == x.length - 1)&&(window.matchMedia('(min-width: 1000px)').matches)){
+      btnWrp.css('margin-top', '-130px');
+    }
 
   if ((currentTab == x.length - 1)){
     console.log(currentTab);
