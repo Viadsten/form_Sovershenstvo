@@ -515,13 +515,14 @@ input.invalid {
   height: 30px; }
 
 .form-btn {
-  max-width: 265px;
+  max-width: 185px;
   width: 40%;
-  height: 40px;
+  height: 46px;
   border: 1px solid #a68e6a;
   line-height: 42px;
   background-color: #f8f8f8;
   min-width: 120px;
+  color: #a0784b;
   text-transform: uppercase;
   margin-left: 20px; }
 
@@ -577,7 +578,8 @@ input.invalid {
 .color-wrp label {
   transition: 0.2s;
   cursor: pointer;
-  display: inline-block; }
+  display: inline-block;
+  background-size: cover; }
 
 .color-wrp label {
   transition: 0.2s;
@@ -625,10 +627,16 @@ input.invalid {
   height: 46px;
   width: 100%; }
 
+@media (min-width: 950px) {
+  .color-btn-wrp button {
+    max-width: 200px; }
+  .color-btn-wrp input {
+    max-width: 200px; } }
+
 @media (min-width: 850px) {
   .color-wrp {
     width: 50%;
-    max-width: 410px;
+    max-width: 480px;
     margin-left: 5%; }
   .color-wrp label {
     width: 60px;
@@ -685,9 +693,9 @@ input.invalid {
   width: 100%;
   content: "";
   margin-bottom: 15px;
-  height: 46px;
+  height: 40px;
   border: 1px solid #967958;
-  line-height: 46px;
+  line-height: 40px;
   text-align: center;
   cursor: pointer;
   background-color: #f8f8f8;
@@ -788,14 +796,17 @@ input.invalid {
     height: auto; }
   .width-bg--wrp {
     width: 100%;
-    height: 85%;
+    height: 96%;
     background-image: url("../img/width-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
   .slider-wrp {
-    margin-top: 5%; }
+    margin-top: 20px; }
   #slider-range {
-    width: 98%; } }
+    width: 100%; }
+  .slider-wrp {
+    width: calc(50% - 70px);
+    margin-left: 25px; } }
 
 .last-tab__1coll {
   width: 90%;
@@ -903,6 +914,26 @@ input, textarea {
 
 .list-tab__2coll--line input {
   height: 46px; }
+
+.color-hover {
+  position: absolute;
+  margin-top: -22px;
+  margin-left: -5px;
+  z-index: -1;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  display: block;
+  background-color: #fff;
+  white-space: pre;
+  border-radius: 5px; }
+
+.color-check--label:hover .color-hover {
+  opacity: 1;
+  z-index: 1; }
+
+@media (min-width: 950px) {
+  .slider-wrp {
+    width: calc(100% - 20px - 470px); } }
 
 * {
   margin: 0;
