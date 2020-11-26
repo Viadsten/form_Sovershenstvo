@@ -265,7 +265,7 @@ line-height: 60px;
 
 /* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio>input:checked+span {
-  box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.65);
+  box-shadow: 0 0 20px rgba($color: #fff, $alpha: 0.35);
 
 }
 
@@ -302,7 +302,7 @@ line-height: 60px;
   width: 100%;
   margin: 80px auto;
   transition:  .2s;
-
+  max-width: 1240px;
 }
 
 /* Стиль полей ввода */
@@ -310,12 +310,14 @@ input {
   padding: 10px;
   width: 100%;
   font-size: 17px;
-  font-family: Raleway;
   border: 1px solid #aaaaaa;
 }
 
 /* Отметьте поля ввода, которые получают ошибку при проверке: */
 input.invalid {
+  background-color: #ffdddd;
+}
+.invalid {
   background-color: #ffdddd;
 }
 
@@ -447,7 +449,7 @@ input.invalid {
 @media(min-width: 700px){
   .custom-radio > .person-img-wrp{
     width: 360px;
-    height: 326px;
+    height: 324px;
   }
 
 
@@ -492,7 +494,7 @@ input.invalid {
 
 
 .color-check:checked + label{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.55);
 }
 
 .regForm__p{
@@ -534,13 +536,19 @@ input.invalid {
 }
 @media(min-width:950px){
   .color-btn-wrp button{
-    max-width: 200px;
+    max-width: 285px;
   }
   .color-btn-wrp input{
-    max-width: 200px;
+    max-width: 205px;
   }
 }
-
+.color-btn-wrp button{
+  transition: .3s;
+  &:hover{
+    background-color: #a0784b;
+    color: #fff;
+  }
+}
 
 @media(min-width:850px){
   .color-wrp{
@@ -557,7 +565,7 @@ input.invalid {
   .color-btn-wrp{
     width: 55%;
     display: flex;
-    margin-left: 5%;
+    margin-left: 2%;
   }
 
   .color-btn-wrp button{
@@ -610,6 +618,7 @@ input.invalid {
 }
 
 #width-check__text{
+  color: #313131;
   display: block;
   width: 100%;
   content: "";
@@ -678,7 +687,7 @@ input.invalid {
 }
 
 .slider-range--text{
-  width: 90%;
+  width: 98%;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
@@ -688,13 +697,13 @@ input.invalid {
 }
 #amount{
   -webkit-tap-highlight-color: transparent;
-  margin-top: 15px;
+  margin-top: 1px;
   width: 50%;
 }
 #amount1{
   -webkit-tap-highlight-color: transparent;
 
-  margin-top: 10px;
+  margin-top: 1px;
 
   text-align: right;
   width: 50%;
@@ -753,6 +762,7 @@ input.invalid {
 
   #slider-range{
     width: 100%;
+    max-width: 700px;
   }
   .slider-wrp{
     width: calc(50% - 70px);
@@ -915,6 +925,7 @@ input, textarea{
   opacity: 0;
   transition: .3s ease-in-out;
   display: block;
+  color: #313131;
   background-color: #fff;
   white-space: pre;
   border-radius: 5px;

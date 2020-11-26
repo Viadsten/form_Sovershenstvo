@@ -21,84 +21,7 @@
         </symbol>
 
       </svg>
-      <!--
-      <header>
-          <div class="container">
-            <input id="toggle" type="checkbox">
-
-
-            <label class="toggle-container" for="toggle">
-                <span class="button button-toggle"></span>
-            </label>
-
-            <nav class="nav">
-                <a class="nav-item" href="">Dashboard</a>
-                <a class="nav-item" href="">History</a>
-                <a class="nav-item" href="">Statistics</a>
-                <a class="nav-item" href="">Settings</a>
-            </nav>
-
-            <section class="dummy-content">
-                <div class="circle"></div>
-                <div class="text">
-                    <span></span><span></span>
-                </div>
-                <div class="square-top"></div>
-                <div class="square-behind"></div>
-            </section>
-        </div>
-        </header>-->
         <main class="page-main">
-          <!--
-          <form class="form-wlp">
-            <section class="form-parts form--1">
-              <div class="news-wrp">
-                <button id="news-left" type="button" class="news__btn btn-prev"><svg width="23" height="32" class="news-btn-svg news_btn--left"><use xlink:href ="#news-btn"></use></svg></button>
-                <div class="slider-container">
-                  <div class="slider-track">
-                    <div class="slider-item">
-                      <label class="custom-radio">
-                        <input type="radio" name="matereal">
-                        <span></span>
-                        <p class="form-wrp__text form-wrp__title">Текстильные</p>
-                        <p class="form-wrp__text form-wrp__descr">Помогут сохранить тепло в помещении и сделать его более тихим.</p>
-
-                      </label>
-                    </div>
-                    <div class="slider-item">
-                      <label class="custom-radio">
-                        <input type="radio" name="matereal">
-                        <span></span>
-                        <p class="form-wrp__text form-wrp__title">Бумажные</p>
-
-                      </label>
-                    </div>
-                    <div class="slider-item">
-                      <label class="custom-radio">
-                        <input type="radio" name="matereal">
-                        <span></span>
-                        <p class="form-wrp__text form-wrp__title">Флизилиновые</p>
-
-                      </label>
-                    </div>
-                    <div class="slider-item">
-                      <label class="custom-radio">
-                        <input type="radio" name="matereal">
-                        <span></span>
-                        <p class="form-wrp__text form-wrp__title">Фотообои / панно / фрески</p>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <button id="news-right" type="button" class="news__btn btn-next"><svg width="23" height="32" class="news-btn-svg news_btn--right"><use xlink:href ="#news-btn"></use></svg></button>
-              </div>
-              <button type="button" class="form__button form__button--1" onclick="formBtn(this);">Далее</button>
-              <section class="form-parts form--2">
-
-              </section>
-              <button type="button" class="form__button form__button--2" onclick="formBtn(this);">Далее</button>
-
-          </form>-->
           <form id="regForm" action="">
 
             <div class="tab">
@@ -106,7 +29,7 @@
               <div class="owl-carousel owl-carousel--1 owl-theme">
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="matereal">
+                    <input type="radio" name="matereal" value="Текстильные">
                     <span>
                         <img class="mat-img" src="img/mat1.png">
                     </span>
@@ -116,7 +39,7 @@
                 </div>
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="matereal">
+                    <input type="radio" name="matereal" value="Бумажные">
                     <span>
                       <img class="mat-img" src="img/mat2.png">
                   </span>
@@ -127,7 +50,7 @@
                 </div>
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="matereal">
+                    <input type="radio" name="matereal" value="Флизилиновые">
                     <span>
                       <img class="mat-img" src="img/mat3.png">
                   </span>
@@ -136,7 +59,7 @@
                 </div>
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="matereal">
+                    <input type="radio" name="matereal" value="Фотообои/панно/фрески">
                     <span>
                       <img class="mat-img" src="img/mat4.png">
                   </span>
@@ -145,11 +68,92 @@
                 </div>
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="matereal">
+                    <input type="radio" name="matereal" value="Под покраску">
                     <span>
                       <img class="mat-img" src="img/mat5.png">
                   </span>
                     <p class="form-wrp__text form-wrp__title">Под покраску</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="matereal" value="Звукоизоляционные">
+                    <span>
+                      <img class="mat-img" src="img/mat6.png">
+                  </span>
+                    <p class="form-wrp__text form-wrp__title">Звукоизоляционные</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="matereal" value="Шёлковые обои">
+                    <span>
+                      <img class="mat-img" src="img/mat7.png">
+                  </span>
+                    <p class="form-wrp__text form-wrp__title">Шёлковые обои</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="matereal" value="Флоковые">
+                    <span>
+                      <img class="mat-img" src="img/mat8.png">
+                  </span>
+                    <p class="form-wrp__text form-wrp__title">Флоковые</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="matereal" value="Фрески">
+                    <span>
+                      <img class="mat-img" src="img/mat9.png">
+                  </span>
+                    <p class="form-wrp__text form-wrp__title">Фрески</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="matereal" value="Флуоресцентные">
+                    <span>
+                      <img class="mat-img" src="img/mat10.png">
+                  </span>
+                    <p class="form-wrp__text form-wrp__title">Флуоресцентные</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="matereal" value="Виниловые">
+                    <span>
+                      <img class="mat-img" src="img/mat11.png">
+                  </span>
+                    <p class="form-wrp__text form-wrp__title">Виниловые</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="matereal" value="Стеклообои">
+                    <span>
+                      <img class="mat-img" src="img/mat12.png">
+                  </span>
+                    <p class="form-wrp__text form-wrp__title">Стеклообои</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="matereal" value="Жидкие">
+                    <span>
+                      <img class="mat-img" src="img/mat13.png">
+                  </span>
+                    <p class="form-wrp__text form-wrp__title">Жидкие</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="matereal" value="3D">
+                    <span>
+                      <img class="mat-img" src="img/mat14.png">
+                  </span>
+                    <p class="form-wrp__text form-wrp__title">3D</p>
                   </label>
                 </div>
               </div>
@@ -160,7 +164,7 @@
               <div class="owl-carousel owl-carousel--2 owl-theme">
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="person">
+                    <input type="radio" name="person" value="Для подростка">
                     <span class="person-img-wrp">
                         <img class="mat-img" src="img/who1.png">
                     </span>
@@ -169,7 +173,7 @@
                 </div>
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="person">
+                    <input type="radio" name="person" value="Коридор">
                     <span class="person-img-wrp">
                       <img class="mat-img" src="img/who2.jpg">
                   </span >
@@ -178,11 +182,92 @@
                 </div>
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="person">
+                    <input type="radio" name="person" value="На улицу">
                     <span class="person-img-wrp">
                       <img class="mat-img" src="img/who3.png">
                     </span>
                     <p class="form-wrp__text form-wrp__title form-wrp__text--person">На улицу</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="person" value="для мальчика">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/who4.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">для мальчика</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="person" value="для девочки">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/who5.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">для девочки</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="person" value="детская">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/who6.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">детская</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="person" value="кухня">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/who7.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">кухня</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="person" value="душевая">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/who8.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">душевая</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="person" value="гардероб">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/who9.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">гардероб</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="person" value="гостинная">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/who10.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">гостинная</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="person" value="кабинет">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/who11.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">кабинет</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="person" value="спальня">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/who12.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">спальня</p>
                   </label>
                 </div>
               </div>
@@ -192,7 +277,7 @@
               <div class="owl-carousel owl-carousel--2 owl-theme">
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="style">
+                    <input type="radio" name="style" value="Современный">
                     <span class="person-img-wrp">
                         <img class="mat-img" src="img/style1.png">
                     </span>
@@ -201,7 +286,7 @@
                 </div>
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="style">
+                    <input type="radio" name="style" value="Скандинавский/Минимализм">
                     <span class="person-img-wrp">
                       <img class="mat-img" src="img/style2.png">
                   </span >
@@ -210,11 +295,56 @@
                 </div>
                 <div class="slider-item">
                   <label class="custom-radio">
-                    <input type="radio" name="style">
+                    <input type="radio" name="style" value="Классика">
                     <span class="person-img-wrp">
                       <img class="mat-img" src="img/style3.png">
                     </span>
                     <p class="form-wrp__text form-wrp__title form-wrp__text--person">Классика</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="style" value="Молодёжный">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/style4.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">Молодёжный</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="style" value="Восточный">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/style5.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">Восточный</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="style" value="Ретро">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/style6.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">Ретро</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="style" value="Лофт">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/style7.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">Лофт</p>
+                  </label>
+                </div>
+                <div class="slider-item">
+                  <label class="custom-radio">
+                    <input type="radio" name="style" value="Винтаж">
+                    <span class="person-img-wrp">
+                      <img class="mat-img" src="img/style8.png">
+                    </span>
+                    <p class="form-wrp__text form-wrp__title form-wrp__text--person">Винтаж</p>
                   </label>
                 </div>
               </div>
@@ -248,7 +378,7 @@
                   <input type="checkbox" class="color-check"  id="ch12"  name="color" value="Оранжевый">
                   <label for="ch12" class="color-check--label"><span class="color-hover">  Оранжевый  </span></label>
                   <input type="checkbox" class="color-check"  id="ch13"  name="color" value="Берсиковый">
-                  <label for="ch13" class="color-check--label"><span class="color-hover">  Берсиковый  </span></label>
+                  <label for="ch13" class="color-check--label"><span class="color-hover">  Персиковый  </span></label>
                   <input type="checkbox" class="color-check"  id="ch14"  name="color" value="Чёрно-белый">
                   <label for="ch14" class="color-check--label"><span class="color-hover">  Чёрно-белый  </span></label>
                   <input type="checkbox" class="color-check"  id="ch15"  name="color" value="Розовый">
@@ -342,8 +472,8 @@
               <div class="slider-wrp">
                 <div id="slider-range"></div>
                 <p class="slider-range--text">
-                  <input type="text" id="amount" readonly style="border:0; color:#2b2b2b; font-family: 'Roboto';">
-                  <input type="text" id="amount1" readonly style="border:0; color:#2b2b2b; font-family: 'Roboto';">
+                  <input type="text" id="amount" readonly style="border:0; background-color:#171e26; color: #fff; font-family: 'Roboto';">
+                  <input type="text" id="amount1" readonly style="border:0; background-color:#171e26; color: #fff; font-family: 'Roboto';">
                 </p>
               </div>
             </div>
@@ -351,16 +481,16 @@
               <h2 class="regForm__h2 last-tab__text">Заполните форму для подбора обоев</h2>
               <div class="last-tab__wrapper">
                 <div class="last-tab__1coll">
-                  <input type="text" placeholder="Имя">
-                  <input type="tel" placeholder="Номер телефона">
-                  <input type="text" placeholder="Адрес (город или регион)">
-                  <input type="email" placeholder="E-mail">
+                  <input class="invalid" type="text" placeholder="Имя" name="name">
+                  <input type="tel" placeholder="Номер телефона" name="tel">
+                  <input type="text" placeholder="Адрес (город или регион)" name="adress">
+                  <input type="email" placeholder="E-mail" name="e-mail">
                 </div>
                 <div class="last-tab__2coll">
-                  <textarea placeholder="Ваше сообщение"></textarea>
+                  <textarea placeholder="Ваше сообщение" name="message"></textarea>
                   <div class="list-tab__2coll--line">
-                    <input class="input-time" type="datetime" placeholder="Время для связи (московское)">
-                    <input type="text" class="input-week" placeholder="День недели">
+                    <input class="input-time" type="datetime" name="time" placeholder="Время для связи (московское)">
+                    <input type="text" class="input-week" name="week" placeholder="День недели">
                   </div>
                   <div class="input-file__wrp">
                     <input class="input-file" type="file" id="input__file">
@@ -369,7 +499,7 @@
                 </div>
               </div>
               <p class="last-tab__descr last-tab__text">После получения вашей заявки, наш дизайнер подберёт обои и в указанное время и день недели свяжется  с вами для обсуждения,
-                также вы можно заказать у нас каталоги для просмотра с доставкой на дом  </p>
+                также вы можете заказать у нас каталоги для просмотра с доставкой на дом  </p>
             </div>
             <div class="form-btn--bg">
               <div class="form-btn__wrp">

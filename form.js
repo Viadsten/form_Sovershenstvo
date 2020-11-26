@@ -28,7 +28,7 @@ function nextPrev(n) {
 
   var x = document.getElementsByClassName("tab");
 
-  if (n == 1 && !validateForm()) return false;
+  if (n == 1 && !validateForm(currentTab)) return false;
   x[currentTab].classList.remove("tab-active");
   currentTab = currentTab + n;
   if (currentTab >= x.length) {
@@ -90,37 +90,43 @@ function nextPrev(n) {
 
 
 }
-
-function validateForm() {
+function validateForm(currentTab) {
   var x, y, i, valid = true;
+
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
   b = x[currentTab].getElementsByClassName("radio");
   ch = x[currentTab].getElementsByClassName("color-check");
   for (i = 0; i < y.length; i++) {
-    if ((y[i].value == "")){
-      y[i].className += " invalid";
-      valid = false;
-    }
 
-  }
-  for (i = 0; i < y.length; i++) {
-    if (((y[i].checked) == true)&&(y[i].type == "radio")){
-      break;
-    }else if((y[i].type == "radio")&&(i == y.length - 1)&&((y[i].checked) == false)){
-      y[i].className += " invalid";
-      alert('Выберите один из вариантов.')
+    if(($("input[name='matereal']:checked").length == 0)&&(currentTab == 0)){
       valid = false;
+      alert('Выберите один из вариантов.');
+      break;
     }
-// проверка checkbox
-    if (((((y[i].checked) == true)&&(y[i].type == "checkbox"))||(y[i].value != ""))){
-      valid = true;
+    if(($("input[name='person']:checked").length == 0)&&(currentTab == 1)){
+      alert('Выберите один из вариантов.');
       break;
-    }else if ((y[i].type == "checkbox")&&(i == y.length - 1)&&((y[i].checked) == false)){
-      y[i].className += " invalid";
-
-      alert('Выберите цвет.')
+    }
+    if(($("input[name='style']:checked").length == 0)&&(currentTab == 2)){
       valid = false;
+      alert('Выберите один из вариантов.');
+      break;
+    }
+    if (($("input[name='color']:checked").length == 0)&&(currentTab == 3)&&(y[i].value == "")){
+      alert('Выберите цвет обоев.')
+      valid = false;
+      break;
+    }
+    if (($("input[name='width']:checked").length == 0)&&(currentTab == 4)){
+      alert('Выберите ширину обоев.')
+      valid = false;
+      break;
+    }
+    if ((y[i].value == "")&&(currentTab == 5)){
+      alert('Заполните все поля');
+      valid = false;
+      break;
     }
   }
 
