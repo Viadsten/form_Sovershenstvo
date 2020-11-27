@@ -23,6 +23,7 @@ var lastTab = $('body');
 var regForm = $('#regForm');
 var nextBtn = $('#nextBtn');
 var btnWrpBg = $('.form-btn--bg');
+var nextprev = $('.owl-nav');
 var dotsWrp = $('.dots-wrp');
 function nextPrev(n) {
 
@@ -58,7 +59,9 @@ function nextPrev(n) {
     if ((currentTab == 4)&&(window.matchMedia('(max-width: 800px)').matches)){
       btnWrp.css('margin-top', '30px');
       }
-
+      if ((currentTab == 1)||(currentTab == 2)){
+        nextprev.css('padding-top', '100px');
+        }
     if ((currentTab == 4)&&(window.matchMedia('(min-width: 800px)').matches)){
       btnWrp.css('margin-top', '-62px');
       }
@@ -106,6 +109,7 @@ function validateForm(currentTab) {
     }
     if(($("input[name='person']:checked").length == 0)&&(currentTab == 1)){
       alert('Выберите один из вариантов.');
+      valid = false;
       break;
     }
     if(($("input[name='style']:checked").length == 0)&&(currentTab == 2)){
@@ -125,6 +129,7 @@ function validateForm(currentTab) {
     }
     if ((y[i].value == "")&&(currentTab == 5)){
       alert('Заполните все поля');
+      console.log(y[i].value == "")
       valid = false;
       break;
     }
@@ -150,8 +155,9 @@ function fixStepIndicator(n) {
 $(document).ready(function(){
   $(".owl-carousel--1").owlCarousel({
     smartSpeed: 500,
-    margin: 15,
+    margin: 40,
     nav:true,
+    autoplay:true,
     responsive:{
       0:{
           items:1
@@ -164,9 +170,6 @@ $(document).ready(function(){
       },
       1050:{
         items:4
-      },
-      1290:{
-          items:5
       }
   }
   });
@@ -177,8 +180,9 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".owl-carousel--2").owlCarousel({
     smartSpeed: 500,
-    margin: 15,
+    margin: 50,
     nav:true,
+    autoplay:true,
     responsive:{
       0:{
           items:1
@@ -186,7 +190,7 @@ $(document).ready(function(){
       600:{
         items:2
       },
-      1050:{
+      1150:{
         items:3
       }
   }
