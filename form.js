@@ -127,6 +127,9 @@ function validateForm(currentTab) {
       valid = false;
       break;
     }
+
+  }
+  for (i = 0; i < y.length - 1; i++) {
     if ((y[i].value == "")&&(currentTab == 5)){
       alert('Заполните все поля');
       console.log(y[i].value == "")
