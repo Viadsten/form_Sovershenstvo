@@ -158,7 +158,7 @@ function fixStepIndicator(n) {
 $(document).ready(function(){
   $(".owl-carousel--1").owlCarousel({
     smartSpeed: 500,
-    margin: 40,
+    margin: 10,
     nav:true,
     autoplay:true,
     responsive:{
@@ -186,7 +186,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".owl-carousel--2").owlCarousel({
     smartSpeed: 500,
-    margin: 50,
+    margin: 80,
     nav:true,
     autoplay:true,
     responsive:{

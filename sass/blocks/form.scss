@@ -171,6 +171,7 @@ line-height: 60px;
   }
 }
 
+
 .btn-next{
   &:disabled{
     svg{
@@ -236,8 +237,8 @@ line-height: 60px;
   margin-left: calc(50vw - 120px);
   margin-top: 20px;
   margin-bottom: 10px;
-  width: 240px;
-  height: 387px;
+  width: 210px;
+  height: 338px;
 }
 
 
@@ -298,7 +299,9 @@ line-height: 60px;
 
 /* Стиль формы */
 #regForm {
+  background-color: #fff;
   padding: 0px;
+  padding-top: 40px;
   width: 100%;
   margin: 80px auto;
   transition:  .2s;
@@ -365,6 +368,10 @@ input.invalid {
   display: block;
 }
 
+.page{
+  background-color: #171e26;
+}
+
 .owl-prev{
   background-image: url("back.png");
   background-size: cover;
@@ -408,6 +415,7 @@ input.invalid {
 .regForm__h2{
   font-weight: 300;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .custom-radio > .person-img-wrp{
@@ -987,7 +995,7 @@ input, textarea{
 }
 
 .owl-theme .owl-nav{
-  margin-top: -250px;
+  margin-top: -232px;
   position: relative;
   z-index: -1;
 }
@@ -1002,4 +1010,8 @@ input, textarea{
 
 .tab--2 .owl-carousel{
   margin-top: -50px;
+}
+
+.owl-carousel .owl-item img{
+  width: 100%;
 }
