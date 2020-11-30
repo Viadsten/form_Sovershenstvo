@@ -23,7 +23,6 @@
       </svg>
         <main class="page-main">
           <form id="regForm" action="">
-
             <div class="tab">
               <h2 class="regForm__h2">Выберите материал и вид обоев</h2>
               <div class="owl-carousel owl-carousel--1 owl-theme">
@@ -35,7 +34,6 @@
                     </span>
                     </label>
                     <p class="form-wrp__text form-wrp__title">Текстильные</p>
-                    <p class="form-wrp__text form-wrp__descr">Помогут сохранить тепло в помещении и сделать его более тихим.</p>
                 </div>
                 <div class="slider-item">
                   <label class="custom-radio">
@@ -44,8 +42,6 @@
                       <img class="mat-img" src="img/mat2.png">
                   </span>
                   <p class="form-wrp__text form-wrp__title">Бумажные</p>
-                  <p class="form-wrp__text form-wrp__descr">Традиционный способ отделки, который считается лучшим с экологической точки зрения</p>
-
                   </label>
                 </div>
                 <div class="slider-item">
@@ -54,7 +50,7 @@
                     <span>
                       <img class="mat-img" src="img/mat3.png">
                   </span>
-                    <p class="form-wrp__text form-wrp__title">Флизилиновые</p>
+                    <p class="form-wrp__text form-wrp__title">Флизелиновые</p>
                   </label>
                 </div>
                 <div class="slider-item">
@@ -159,7 +155,7 @@
               </div>
             </div>
 
-            <div class="tab">
+            <div class="tab tab--2">
               <h2 class="regForm__h2">Куда ищете обои и для кого?</h2>
               <div class="owl-carousel owl-carousel--2 owl-theme">
                 <div class="slider-item">
@@ -457,7 +453,7 @@
                       $( "#amount1" ).val( "до " + ui.values[ 1 ] );
                     }
                   });
-                  $( "#amount" ).val( "от " + $( "#slider-range" ).slider( "values", 0 ));
+                  $( "#amount" ).val( "Цена от " + $( "#slider-range" ).slider( "values", 0 ));
 
                 $( "#amount1" ).val("до " + $( "#slider-range" ).slider( "values", 1 ));
                 } );
@@ -472,8 +468,8 @@
               <div class="slider-wrp">
                 <div id="slider-range"></div>
                 <p class="slider-range--text">
-                  <input type="text" id="amount" readonly style="border:0;  color: #000; font-family: 'Roboto';">
-                  <input type="text" id="amount1" readonly style="border:0; color: #000; font-family: 'Roboto';">
+                  <input type="text" id="amount" readonly style="border:0; font-weight: 300; color: #000; font-family: 'Roboto';">
+                  <input type="text" id="amount1" readonly style="border:0; font-weight: 300; color: #000; font-family: 'Roboto';">
                 </p>
               </div>
             </div>
