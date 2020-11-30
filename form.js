@@ -51,6 +51,9 @@ function nextPrev(n) {
     if ((currentTab == 3)&&(window.matchMedia('(min-width: 950px)').matches)){
       btnWrp.css('margin-top', '-7px');
       }
+      if ((currentTab == 2)&&(window.matchMedia('(min-width: 950px)').matches)){
+      btnWrp.css('margin-top', '45px');
+      }
     if ((currentTab == 4)&&(window.matchMedia('(max-width: 800px)').matches)){
       btnWrp.css('margin-top', '30px');
       }
