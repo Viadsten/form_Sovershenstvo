@@ -40,12 +40,7 @@ function nextPrev(n) {
   showTab(currentTab);
 
 
-  if ((currentTab == 1)||(currentTab == 2)||(currentTab == 4)){
-    btnWrp.css('margin-top', '120px');
-  }
-  else{
-    btnWrp.css('margin-top', '180px');
-  }
+
   if ((currentTab == 3)&&(window.matchMedia('(min-width: 50px)').matches)){
     btnWrp.css('margin-top', '160px');
     }
@@ -54,7 +49,7 @@ function nextPrev(n) {
     btnWrp.css('margin-top', '90px');
     }else{ regForm[0].classList.remove("color-bg");}
     if ((currentTab == 3)&&(window.matchMedia('(min-width: 950px)').matches)){
-      btnWrp.css('margin-top', '-49px');
+      btnWrp.css('margin-top', '-7px');
       }
     if ((currentTab == 4)&&(window.matchMedia('(max-width: 800px)').matches)){
       btnWrp.css('margin-top', '30px');
@@ -63,16 +58,17 @@ function nextPrev(n) {
         nextprev.css('padding-top', '100px');
         }
     if ((currentTab == 4)&&(window.matchMedia('(min-width: 800px)').matches)){
-      btnWrp.css('margin-top', '-62px');
+      btnWrp.css('margin-top', '-35px');
       }
       if ((currentTab == x.length - 1)&&(window.matchMedia('(max-width: 700px)').matches)){
         btnWrp.css('margin-top', '210px');
       }
+
     if ((currentTab == x.length - 1)&&(window.matchMedia('(min-width: 700px)').matches)){
       btnWrp.css('margin-top', '0px');
     }
     if ((currentTab == x.length - 1)&&(window.matchMedia('(min-width: 1000px)').matches)){
-      btnWrp.css('margin-top', '-130px');
+      btnWrp.css('margin-top', '-105px');
     }
 
   if ((currentTab == x.length - 1)){
@@ -186,7 +182,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".owl-carousel--2").owlCarousel({
     smartSpeed: 500,
-    margin: 80,
+    margin: 20,
     nav:true,
     autoplay:true,
     responsive:{

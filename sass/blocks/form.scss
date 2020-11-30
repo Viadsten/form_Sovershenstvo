@@ -151,7 +151,8 @@ line-height: 60px;
 }
 
 .slider-item{
-  width: 280px;
+  width: 210px;
+  margin-left: 10px;
 }
 
 .news__card1{
@@ -301,7 +302,7 @@ line-height: 60px;
 #regForm {
   background-color: #fff;
   padding: 0px;
-  padding-top: 40px;
+  padding-bottom: 20px;
   width: 100%;
   margin: 80px auto;
   transition:  .2s;
@@ -414,8 +415,8 @@ input.invalid {
 
 .regForm__h2{
   font-weight: 300;
+  padding-top: 40px;
   padding-left: 20px;
-  padding-bottom: 20px;
 }
 
 .custom-radio > .person-img-wrp{
@@ -431,7 +432,7 @@ input.invalid {
 
 @media(min-width: 500px){
   .custom-radio>span{
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .custom-radio > .person-img-wrp{
@@ -440,11 +441,11 @@ input.invalid {
 
 
   .form-wrp__text{
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .form-btn__wrp{
-    margin: 165px auto 0;
+    margin: 45px auto 0;
     justify-content: flex-end;
   }
 
@@ -466,8 +467,8 @@ input.invalid {
 
 @media(min-width: 1180px){
   .custom-radio > .person-img-wrp{
-    width: 399px;
-    height: 358px;
+    width: 370px;
+    height: 330px;
   }
 
 
@@ -1014,4 +1015,16 @@ input, textarea{
 
 .owl-carousel .owl-item img{
   width: 100%;
+}
+
+
+.owl-carousel--2 .slider-item{
+  margin-left: -15px;
+  label p{
+    margin-left: 20px;
+  }
+}
+
+.tab--3 .owl-carousel{
+  margin-top: -50px;
 }
