@@ -410,7 +410,7 @@ html {
   margin-top: 20px;
   margin-bottom: 10px;
   width: 210px;
-  height: 338px; }
+  height: 333px; }
 
 /* стили при наведении курсора на радио */
 .custom-radio > input:not(:disabled):not(:checked) + span:hover::before {
@@ -428,7 +428,9 @@ html {
 
 /* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio > input:checked + span {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.65); }
+  border: 4px solid #000;
+  padding: 0px;
+  transform: scale(1.05); }
 
 .custom-radio > input:checked + span:hover::before {
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.222); }
@@ -578,8 +580,8 @@ input.invalid {
 
 @media (min-width: 1180px) {
   .custom-radio > .person-img-wrp {
-    width: 370px;
-    height: 330px; } }
+    width: 362px;
+    height: 324px; } }
 
 .color-check {
   display: none;
@@ -653,7 +655,7 @@ input.invalid {
   .color-wrp {
     width: 50%;
     max-width: 480px;
-    margin-left: 5%; }
+    margin-left: 2%; }
   .color-wrp label {
     width: 60px;
     height: 60px; }
@@ -1012,12 +1014,18 @@ input, textarea {
   width: 100%; }
 
 .owl-carousel--2 .slider-item {
-  margin-left: -15px; }
+  margin-left: -11px; }
   .owl-carousel--2 .slider-item label p {
     margin-left: 20px; }
 
 .tab--3 .owl-carousel {
   margin-top: -50px; }
+
+.ur-color {
+  transition: .2s; }
+  .ur-color:hover::-moz-placeholder {
+    transition: .2s;
+    opacity: 0; }
 
 * {
   margin: 0;

@@ -408,7 +408,7 @@
                 </div>
 
               <div class="color-btn-wrp">
-                <input type="text" placeholder="ВАШ ЦВЕТ">
+                <input type="text" placeholder="ВАШ ЦВЕТ" class="ur-color">
                 <button type="button">ЗАТРУДНЯЮСЬ, НУЖНА ПОМОЩЬ</button>
               </div>
             </div>
@@ -449,13 +449,13 @@
                     max: 100000,
                     values: [ 490, 100000 ],
                     slide: function( event, ui ) {
-                      $( "#amount" ).val( "от " + ui.values[ 0 ]);
-                      $( "#amount1" ).val( "до " + ui.values[ 1 ] );
+                      $( "#amount" ).val( "Цена от " + ui.values[ 0 ] + " руб");
+                      $( "#amount1" ).val( "до " + ui.values[ 1 ] + " руб" );
                     }
                   });
-                  $( "#amount" ).val( "Цена от " + $( "#slider-range" ).slider( "values", 0 ));
+                  $( "#amount" ).val( "Цена от " + $( "#slider-range" ).slider( "values", 0 ) + " руб");
 
-                $( "#amount1" ).val("до " + $( "#slider-range" ).slider( "values", 1 ));
+                $( "#amount1" ).val("до " + $( "#slider-range" ).slider( "values", 1 ) + " руб");
                 } );
                 </script>
                 <div class="slider--desktop-wrp">
