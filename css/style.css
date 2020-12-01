@@ -1026,6 +1026,15 @@ input, textarea {
   .ur-color:hover::-moz-placeholder {
     transition: .2s;
     opacity: 0; }
+  .ur-color:hover:-ms-input-placeholder {
+    transition: .2s;
+    opacity: 0; }
+  .ur-color:hover::-ms-input-placeholder {
+    transition: .2s;
+    opacity: 0; }
+  .ur-color:hover::-webkit-input-placeholder {
+    transition: .2s;
+    opacity: 0; }
 
 * {
   margin: 0;

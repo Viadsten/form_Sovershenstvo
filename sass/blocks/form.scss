@@ -1036,4 +1036,16 @@ input, textarea{
     transition: .2s;
     opacity: 0;
   }
+  &:hover:-ms-input-placeholder{
+    transition: .2s;
+    opacity: 0;
+  }
+  &:hover::-ms-input-placeholder{
+    transition: .2s;
+    opacity: 0;
+  }
+  &:hover::-webkit-input-placeholder{
+    transition: .2s;
+    opacity: 0;
+  }
 }
