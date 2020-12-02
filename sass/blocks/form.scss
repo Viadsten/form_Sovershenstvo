@@ -379,12 +379,14 @@ input.invalid {
   background-size: cover;
   width: 30px;
   height: 30px;
+  outline: none;
 }
 .owl-next{
   background: url("../img/next.png");
   background-size: cover;
   width: 30px;
   height: 30px;
+  outline: none;
 }
 
 @media(min-width:950px){
@@ -510,7 +512,7 @@ input.invalid {
 .regForm__p{
   padding-left: 20px;
   padding-top: 0px;
-  padding-bottom: 48px;
+  padding-bottom: 37px;
 }
 
 .color-wrp{
@@ -565,6 +567,7 @@ input.invalid {
     width: 50%;
     max-width: 480px;
     margin-left: 2%;
+    padding-bottom: 11px;
   }
 
   .color-wrp label{
